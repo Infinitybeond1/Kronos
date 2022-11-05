@@ -1,10 +1,11 @@
 import { MagnifyingGlass, PlusCircle } from 'phosphor-react';
 import { supabase } from '../supabase'
+import Card from '../components/card'
 
 export default function Index() {
   return (
     <div className='w-screen h-screen bg-slate-800 text-slate-200'>
-      <div className="grid content-center p-3">
+      <div className="grid content-center px-3 py-2">
         <div className="flex space-x-1">
           <input
             type="text"
@@ -16,46 +17,27 @@ export default function Index() {
           </button>
         </div>
       </div>
-
       <div className='px-3'>
-        <div className='bg-slate-600 p-3 rounded-3xl grid grid-cols-5 gap-5'>
-          <div className='bg-slate-700 rounded-3xl overflow-hidden p-20'>
-            Reminder1
-          </div>
-          <div className='bg-slate-700 rounded-3xl overflow-hidden p-20'>
-            Reminder2
-          </div>
-          <div className='bg-slate-700 rounded-3xl overflow-hidden p-20'>
-            Reminder3
-          </div>
-          <div className='bg-slate-700 rounded-3xl overflow-hidden p-20'>
-            Reminder4
-          </div>
-          <div className='bg-slate-700 rounded-3xl overflow-hidden p-20'>
-            Reminder5
-          </div>
-          <div className='bg-slate-700 rounded-3xl overflow-hidden p-20'>
-            Reminder6
-          </div>
-          <div className='bg-slate-700 rounded-3xl overflow-hidden p-20'>
-            Reminder7
-          </div>
-          <div className='bg-slate-700 rounded-3xl overflow-hidden p-20'>
-            Reminder8
-          </div>
-          <div className='bg-slate-700 rounded-3xl overflow-hidden p-20'>
-            Reminder9
-          </div>
-          <div className='bg-slate-700 rounded-3xl overflow-hidden p-20'>
-            Reminder10
-          </div>
+        <div className='bg-slate-600 p-3 rounded-3xl grid grid-cols-4 gap-2'>
+          <Card name="Reminder1" description="Description" time="10 PM" />
+          <Card name="Reminder2" description="Description" time="10 PM" />
+          <Card name="Reminder3" description="Description" time="10 PM" />
+          <Card name="Reminder4" description="Description" time="10 PM" />
+          <Card name="Reminder5" description="Description" time="10 PM" />
+          <Card name="Reminder6" description="Description" time="10 PM" />
+          <Card name="Reminder7" description="Description" time="10 PM" />
+          <Card name="Reminder8" description="Description" time="10 PM" />
+          <Card name="Reminder9" description="Description" time="10 PM" />
+          <Card name="Reminder10" description="Description" time="10 PM" />
+          <Card name="Reminder11" description="Description" time="10 PM" />
+          <Card name="Reminder12" description="Description" time="10 PM" />
         </div>
       </div>
 
-      <div className='p-3'>
-        <div className='rounded-3xl bg-slate-600 p-3 grid place-items-center'>
+      <div className='p-2'>
+        <div className='rounded-3xl bg-slate-600 p-3 grid place-items-center hover:text-slate-400'>
           <button>
-            <PlusCircle size={25} /> 
+            <PlusCircle size={25} />
           </button>
         </div>
       </div>
