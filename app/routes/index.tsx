@@ -1,4 +1,4 @@
-import { MagnifyingGlass } from 'phosphor-react';
+import { MagnifyingGlass, PlusCircle } from 'phosphor-react';
 import { supabase } from '../supabase'
 
 export default function Index() {
@@ -16,6 +16,7 @@ export default function Index() {
           </button>
         </div>
       </div>
+
       <div className='px-3'>
         <div className='bg-slate-600 p-3 rounded-3xl grid grid-cols-5 gap-5'>
           <div className='bg-slate-700 rounded-3xl overflow-hidden p-20'>
@@ -48,6 +49,14 @@ export default function Index() {
           <div className='bg-slate-700 rounded-3xl overflow-hidden p-20'>
             Reminder10
           </div>
+        </div>
+      </div>
+
+      <div className='p-3'>
+        <div className='rounded-3xl bg-slate-600 p-3 grid place-items-center'>
+          <button>
+            <PlusCircle size={25} /> 
+          </button>
         </div>
       </div>
     </div>
