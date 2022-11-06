@@ -513,6 +513,11 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
 .block {
   display: block;
 }
@@ -525,56 +530,12 @@ video {
   display: grid;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
-.h-4 {
-  height: 1rem;
-}
-
-.h-40 {
-  height: 10rem;
-}
-
-.h-\[32rem\] {
-  height: 32rem;
-}
-
-.h-\[\] {
-  height: ;
-}
-
-.h-\[70px\] {
-  height: 70px;
-}
-
-.h-\[30rem\] {
-  height: 30rem;
-}
-
-.h-\[5rem\] {
-  height: 5rem;
-}
-
-.h-\[10rem\] {
-  height: 10rem;
-}
-
-.h-\[rem\] {
-  height: rem;
-}
-
-.h-\[8rem\] {
-  height: 8rem;
-}
-
-.h-\[9rem\] {
-  height: 9rem;
-}
-
 .h-\[9\.5rem\] {
   height: 9.5rem;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .w-screen {
@@ -583,10 +544,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.grid-cols-5 {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .grid-cols-4 {
@@ -611,17 +568,22 @@ video {
   margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.rounded-full {
-  border-radius: 9999px;
-}
-
 .rounded-3xl {
   border-radius: 1.5rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .border-slate-800 {
   --tw-border-opacity: 1;
   border-color: rgb(30 41 59 / var(--tw-border-opacity));
+}
+
+.bg-slate-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
 }
 
 .bg-slate-800 {
@@ -634,17 +596,28 @@ video {
   background-color: rgb(71 85 105 / var(--tw-bg-opacity));
 }
 
-.bg-slate-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
-}
-
 .p-2 {
   padding: 0.5rem;
 }
 
 .p-3 {
   padding: 0.75rem;
+}
+
+.p-\[80px\] {
+  padding: 80px;
+}
+
+.p-\[px\] {
+  padding: px;
+}
+
+.p-\[95px\] {
+  padding: 95px;
+}
+
+.p-\[92px\] {
+  padding: 92px;
 }
 
 .px-3 {
@@ -671,6 +644,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -680,9 +658,9 @@ video {
   color: rgb(226 232 240 / var(--tw-text-opacity));
 }
 
-.text-slate-700 {
+.text-slate-300 {
   --tw-text-opacity: 1;
-  color: rgb(51 65 85 / var(--tw-text-opacity));
+  color: rgb(203 213 225 / var(--tw-text-opacity));
 }
 
 .text-white {

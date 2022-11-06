@@ -9,7 +9,7 @@ export default function Index() {
         <div className="flex space-x-1">
           <input
             type="text"
-            className="block w-full px-4 py-2 text-slate-700 bg-slate-600 border-slate-800 rounded-full focus:border-slate-600 focus:ring-slate-500 focus:outline-none focus:ring focus:ring-opacity-40"
+            className="block w-full px-4 py-2 text-slate-300 bg-slate-600 border-slate-800 rounded-full focus:border-slate-600 focus:ring-slate-500 focus:outline-none focus:ring focus:ring-opacity-40"
             placeholder="Search..."
           />
           <button className="p-2 text-white bg-slate-600 rounded-full ">
