@@ -1,8 +1,13 @@
 import { MagnifyingGlass, PlusCircle } from 'phosphor-react';
 import { supabase } from '../supabase'
-import Card from '../components/card'
+import Card from '~/components/card'
+import Modal from '~/components/modal';
+import { useState } from 'react';
+import { Form } from '@remix-run/react';
 
 export default function Index() {
+  const [value, onChange] = useState(new Date());
+  const [open, setOpen] = useState(false)
   return (
     // Body Div 
     <div className='w-screen h-screen bg-slate-800 text-slate-200'>
@@ -43,11 +48,29 @@ export default function Index() {
       <div className='p-2'>
         <div className='rounded-3xl bg-slate-600 p-3 grid place-items-center hover:text-slate-400'>
           {/* Add reminder button */}
-          <button>
+          <button className='h-full w-full px-[40rem]' onClick={() => setOpen(true)}>
             <PlusCircle size={25} />
           </button>
         </div>
       </div>
+      <Modal open={open} onClose={() => setOpen(false)}>
+        <Form>
+          <label>
+            <p>Reminder Name: </p>
+            <input type="text" name="name" />
+          </label>
+          <label>
+            <p>Reminder Description: </p>
+            <textarea>
+
+            </textarea>
+          </label>
+          <label>
+            <p>Reminder Time:</p>
+
+          </label>
+        </Form>
+      </Modal>
     </div>
   );
 }

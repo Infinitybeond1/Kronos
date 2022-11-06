@@ -8,7 +8,6 @@
     "dev:css": "tailwindcss -w -i ./tailwind.css -o app/styles.css"
   },
   "dependencies": {
-    "@chakra-ui/react": "^2.3.7",
     "@remix-run/node": "^1.7.5",
     "@remix-run/react": "^1.7.5",
     "@remix-run/vercel": "^1.7.5",
@@ -18,6 +17,7 @@
     "phosphor-react": "^1.4.1",
     "prisma": "^4.5.0",
     "react": "^18.2.0",
+    
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
