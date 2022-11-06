@@ -4,21 +4,27 @@ import Card from '../components/card'
 
 export default function Index() {
   return (
+    // Body Div 
     <div className='w-screen h-screen bg-slate-800 text-slate-200'>
+      {/* Seach bar div */}
       <div className="grid content-center px-3 py-2">
         <div className="flex space-x-1">
+          {/* Search bar */}
           <input
             type="text"
             className="block w-full px-4 py-2 text-slate-300 bg-slate-600 border-slate-800 rounded-full focus:border-slate-600 focus:ring-slate-500 focus:outline-none focus:ring focus:ring-opacity-40"
             placeholder="Search..."
           />
+          {/* Seach button */}
           <button className="p-2 text-white bg-slate-600 rounded-full ">
             <MagnifyingGlass size={25} />
           </button>
         </div>
       </div>
+      {/* Reminders div */}
       <div className='px-3'>
         <div className='bg-slate-600 p-3 rounded-3xl grid grid-cols-4 gap-2'>
+          {/* Reminder cards */}
           <Card name="Reminder1" description="Description" time="10 PM" />
           <Card name="Reminder2" description="Description" time="10 PM" />
           <Card name="Reminder3" description="Description" time="10 PM" />
@@ -33,9 +39,10 @@ export default function Index() {
           <Card name="Reminder12" description="Description" time="10 PM" />
         </div>
       </div>
-
+      {/* Add reminder div */}
       <div className='p-2'>
         <div className='rounded-3xl bg-slate-600 p-3 grid place-items-center hover:text-slate-400'>
+          {/* Add reminder button */}
           <button>
             <PlusCircle size={25} />
           </button>
