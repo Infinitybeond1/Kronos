@@ -1,5 +1,6 @@
 import { Link } from "@remix-run/react";
 import { User } from "phosphor-react";
+import { redirect } from "@remix-run/node";
 
 export default function Login() {
   return (
@@ -7,7 +8,7 @@ export default function Login() {
       <div className="grid place-items-center h-screen">
         <div>
           <p className="text-4xl text-center">
-            Login
+            Sign up
           </p>
           <div>
             <div className="my-3">
@@ -29,14 +30,14 @@ export default function Login() {
             <div className="my-3">
               <button
                 onClick={() => {
-                  alert("Logged in")
+                  alert("Signed in")
                 }} className="rounded-full bg-slate-600 text-center py-2 p-[92px] hover:text-slate-400">
                 <User size={25} />
               </button>
             </div>
             <div className="text-center">
-              <Link to={`/signup`} className="hover:text-slate-400">
-                Sign up here
+              <Link to={`/login`} className="hover:text-slate-400">
+                Login here
               </Link>
             </div>
           </div>
